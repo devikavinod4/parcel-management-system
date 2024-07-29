@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARCEL MANAGEMENT SYSTEM</title>
+    <title>Parcel Management System</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <h1>Welcome to the Parcel Management System</h1>
-    <p>This is the home page.</p>
+    <header>
+        <h1>Parcel Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#track">Track Parcel</a></li>
+                <li><a href="#manage">Manage Parcels</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Parcel Management System</h2>
+        <p>This application helps you manage and track your parcels efficiently.</p>
+        <button onclick="location.href='#track'">Track Your Parcel</button>
+    </section>
+
+    <section id="track">
+        <h2>Track Your Parcel</h2>
+        <form action="#">
+            <label for="trackingNumber">Enter Tracking Number:</label>
+            <input type="text" id="trackingNumber" name="trackingNumber" required>
+            <button type="submit">Track</button>
+        </form>
+    </section>
+
+    <section id="manage">
+        <h2>Manage Your Parcels</h2>
+        <p>Here you can add, update, and remove parcels from the system.</p>
+        <button onclick="location.href='#'">Add New Parcel</button>
+        <button onclick="location.href='#'">Update Parcel Info</button>
+        <button onclick="location.href='#'">Remove Parcel</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please contact us:</p>
+        <address>
+            <p>Email: support@parcelmanagement.com</p>
+            <p>Phone: 123-456-7890</p>
+        </address>
+    </section>
+
+    <!-- <footer>
+        <p>&copy; 2024 Parcel Management System. All rights reserved.</p>
+    </footer> -->
 </body>
 </html>
