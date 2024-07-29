@@ -7,7 +7,7 @@ import java.net.URISyntaxException;
 public class Parcel {
 
     public static void main(String[] args) {
-        String htmlFilePath = "E:\\VSCode\\ParcelManagementSystem\\parcelmanagement\\src\\webapp\\home.html";
+        String htmlFilePath = "E:\\VSCode\\ParcelManagementSystem\\parcelmanagement\\src\\webapp\\index.html";
 
         // Try to open the HTML file in the default browser
         try {
