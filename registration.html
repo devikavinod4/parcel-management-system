@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="E:\VSCode\ParcelManagementSystem\parcelmanagement\css\registration.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Page</h1>
+        <form id="registrationForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" maxlength="50" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="countryCode">Mobile Number:</label>
+                <div class="mobile-number">
+                    <select id="countryCode" name="countryCode" required>
+                        <option value="+1">+1 (USA)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+91">+91 (India)</option>
+                        <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="text" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" maxlength="10" required placeholder="10-digit number">
+                </div>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" maxlength="255" required></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Username and Password</legend>
+                <label for="userID">User ID:</label>
+                <input type="text" id="userID" name="userID" minlength="5" maxlength="20" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" maxlength="30" required>
+                
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" maxlength="30" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferences</legend>
+                <label><input type="checkbox" name="preferences" value="mailDelivery"> Mail Delivery</label>
+                <label><input type="checkbox" name="preferences" value="notifications"> Notifications</label>
+                <!-- Add more preferences as needed -->
+            </fieldset>
+            
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <div id="acknowledgment" class="hidden">
+            <p class="success-message">Consumer Registration successful</p>
+            <p>Customer Username: <span id="username"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
